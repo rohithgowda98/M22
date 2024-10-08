@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+	<form action="/" method="POST">
+		Enter a valid year
+		<input type="number" name="input_year"> </br>
+		<button type="submit" value="submit"> Check</button>
+	</form>
+	{%if msg%}
+	<p> The given year {{msg}} </p>
+	{%endif%}
+</body>
+
+</html>

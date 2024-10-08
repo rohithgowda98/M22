@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="/static/styles/styles.css">
+	</link>
+</head>
+
+<body>
+	<div class="form-style-2">
+		<div class="form-style-2-heading">Enter the string to count the number of vowels in it</div>
+		<form action="/calculate" method="POST">
+			<label><span>Enter input string</span><input type="text" class="input-field" name="input_string"
+					placeholder="Enter the string" /></label>
+
+			<label><span> </span><input type="submit" value="Submit" /></label>
+		</form>
+		{%if number_of_vowels%}
+		<p> The number of vowels present in given string is {{number_of_vowels}} </p>
+		{%endif%}
+</body>
+
+</html>
